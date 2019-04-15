@@ -97,7 +97,7 @@ public class ComputerNetworkGraph {
         return new Pair<>(distanceArray[indexOf(destination,verticesArray)],servers);
     }
 
-    private static int indexOf(Vertex vertex,Vertex[] array){
+    private int indexOf(Vertex vertex,Vertex[] array){
         for(int i=0;i<array.length;i++){
             if(array[i].equals(vertex))
                 return i;
